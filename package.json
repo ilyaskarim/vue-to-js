@@ -1,0 +1,26 @@
+{
+  "name": "vue-to-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently -k -p \"npm run watch-ts\" \"nodemon  lib/devServer.js\" ",
+    "watch-ts": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyaskarim/vue-to-js.git"
+  },
+  "author": "Ilyas Karim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyaskarim/vue-to-js/issues"
+  },
+  "homepage": "https://github.com/ilyaskarim/vue-to-js#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "typescript": "^3.6.4"
+  }
+}
